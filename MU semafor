@@ -1,0 +1,65 @@
+
+#define led_CRVENA 14
+#define led_ZUTA 13
+#define led_ZELENA 15
+#define led_ZPJESACI 2
+#define led_CPJESACI 4
+
+void setup() {
+  
+pinMode(led_CRVENA, OUTPUT);
+pinMode(led_ZELENA, OUTPUT);
+pinMode(led_ZUTA, OUTPUT);
+pinMode(led_CPJESACI, OUTPUT);
+pinMode(led_ZPJESACI, OUTPUT);
+  
+}
+
+void loop() {
+  
+ digitalWrite(led_CRVENA, HIGH);
+ digitalWrite(led_ZPJESACI, HIGH);
+  delay(2000);
+ digitalWrite(led_CRVENA, LOW);
+  delay(0);
+ digitalWrite(led_CRVENA, HIGH);
+  delay(200);
+ digitalWrite(led_CRVENA, LOW);
+ digitalWrite(led_ZPJESACI, LOW);
+  delay(0);
+
+ digitalWrite(led_ZUTA, HIGH);
+ digitalWrite(led_ZPJESACI, HIGH);
+  delay(1000);
+ digitalWrite(led_ZUTA, LOW);
+ digitalWrite(led_ZPJESACI, LOW);
+  delay(200);
+  digitalWrite(led_ZUTA, HIGH);
+  digitalWrite(led_CPJESACI, HIGH);
+  delay(200);
+ digitalWrite(led_ZUTA, LOW);
+ digitalWrite(led_CPJESACI, LOW);
+  delay(200);
+ digitalWrite(led_ZUTA, HIGH);
+ digitalWrite(led_ZPJESACI, HIGH);
+  delay(200);
+ digitalWrite(led_ZUTA, LOW);
+ digitalWrite(led_ZPJESACI, LOW);
+  delay(200);
+
+  digitalWrite(led_ZELENA, HIGH);
+  digitalWrite(led_CPJESACI, HIGH);
+  delay(2000);
+ digitalWrite(led_ZELENA, LOW);
+  delay(200);
+ digitalWrite(led_ZELENA, HIGH);
+  delay(200);
+ digitalWrite(led_ZELENA, LOW);
+  delay(200);
+ digitalWrite(led_ZELENA, HIGH);
+  delay(200);
+ digitalWrite(led_ZELENA, LOW);
+ digitalWrite(led_CPJESACI, LOW);
+  delay(0);
+
+}
